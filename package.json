@@ -1,0 +1,41 @@
+{
+  "name": "@tadashi/signature-verify",
+  "version": "1.0.0",
+  "description": "Verified the passed-in signature",
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "pretest": "xo",
+    "test": "nyc ava"
+  },
+  "keywords": [
+    "hmac",
+    "signuture",
+    "validate"
+  ],
+  "author": "Thiago Lagden",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "0.22.0",
+    "nyc": "11.1.0",
+    "xo": "0.18.2"
+  },
+  "xo": {
+    "envs": [
+      "node"
+    ],
+    "semicolon": false,
+    "rules": {
+      "camelcase": [
+        "error",
+        {
+          "properties": "never"
+        }
+      ],
+      "capitalized-comments": 0
+    }
+  }
+}
