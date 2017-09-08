@@ -2,14 +2,19 @@
 
 const {createHmac} = require('crypto')
 
-function signatureVerify(signature, payload, secret) {
+function generate(algorithm, payload, secret) {
+	return `${algorithm}=${createHmac(algorithm, secret).update(payload).digest('hex')}`
+}
+
+function verify(signature, payload, secret) {
 	const parts = `${signature}`.split('=')
 	if (parts.length !== 2) {
 		return false
 	}
-	const algorithm = parts[0]
-	const verify = `${algorithm}=${createHmac(algorithm, secret).update(payload).digest('hex')}`
+	const [algorithm] = parts
+	const verify = generate(algorithm, payload, secret)
 	return verify === signature
 }
 
-module.exports = signatureVerify
+exports.verify = verify
+exports.generate = generate

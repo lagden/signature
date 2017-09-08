@@ -1,7 +1,7 @@
 {
-  "name": "@tadashi/signature-verify",
-  "version": "1.0.0",
-  "description": "Verified the passed-in signature",
+  "name": "@tadashi/signature",
+  "version": "2.0.0",
+  "description": "Generates and verifies signatures",
   "main": "index.js",
   "files": [
     "LICENSE",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "0.22.0",
-    "nyc": "11.1.0",
+    "nyc": "11.2.0",
     "xo": "0.18.2"
   },
   "xo": {
