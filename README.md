@@ -45,7 +45,8 @@ const algorithm = 'sha1'
 const payload = '{}'
 const secret = 'a7fee042a2e1a9fa27cfc6931949ffe1'
 
-const signature = generate(algorithm, payload, secret) // => sha1=61ca6afb7b2752e106c939df11bbd7ca883b8166
+const signature = generate(algorithm, payload, secret)
+// => sha1=61ca6afb7b2752e106c939df11bbd7ca883b8166
 ```
 
 ### Verify
@@ -57,7 +58,8 @@ const signature = 'sha1=61ca6afb7b2752e106c939df11bbd7ca883b8166'
 const payload = '{}'
 const secret = 'a7fee042a2e1a9fa27cfc6931949ffe1'
 
-const isValid = verify(signature, payload, secret) // => true
+const isValid = verify(signature, payload, secret)
+// => true
 ```
 
 
