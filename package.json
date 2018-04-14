@@ -1,6 +1,6 @@
 {
   "name": "@tadashi/signature",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Generates and verifies signatures",
   "main": "index.js",
   "engines": {
@@ -24,10 +24,10 @@
   "author": "Thiago Lagden",
   "license": "MIT",
   "devDependencies": {
-    "ava": "0.22.0",
-    "coveralls": "2.13.1",
-    "nyc": "11.2.0",
-    "xo": "0.18.2"
+    "ava": "0.25.0",
+    "coveralls": "3.0.0",
+    "nyc": "11.6.0",
+    "xo": "0.20.3"
   },
   "xo": {
     "envs": [
