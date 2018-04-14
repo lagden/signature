@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "Generates and verifies signatures",
   "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "files": [
     "LICENSE",
     "README.md"

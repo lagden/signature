@@ -1,6 +1,6 @@
 'use strict'
 
-const {createHmac} = require('crypto')
+const {createHmac, timingSafeEqual} = require('crypto')
 
 function generate(algorithm, payload, secret) {
 	return `${algorithm}=${createHmac(algorithm, secret).update(payload).digest('hex')}`
@@ -13,7 +13,7 @@ function verify(signature, payload, secret) {
 	}
 	const [algorithm] = parts
 	const verify = generate(algorithm, payload, secret)
-	return verify === signature
+	return timingSafeEqual(Buffer.from(verify), Buffer.from(signature))
 }
 
 exports.verify = verify
