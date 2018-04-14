@@ -4,7 +4,7 @@
   "description": "Generates and verifies signatures",
   "main": "index.js",
   "engines": {
-    "node": ">=v6.6.0"
+    "node": ">=8.0.0"
   },
   "files": [
     "LICENSE",
