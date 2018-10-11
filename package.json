@@ -11,10 +11,9 @@
     "README.md"
   ],
   "scripts": {
-    "report": "nyc report --reporter=html",
-    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "report": "nyc report --reporter=text-lcov | coveralls",
     "pretest": "xo",
-    "test": "nyc ava"
+    "test": "ava"
   },
   "keywords": [
     "hmac",
@@ -25,9 +24,7 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "0.25.0",
-    "coveralls": "3.0.0",
-    "nyc": "11.6.0",
-    "xo": "0.20.3"
+    "xo": "0.23"
   },
   "xo": {
     "envs": [
