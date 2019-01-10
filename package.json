@@ -23,7 +23,7 @@
   "author": "Thiago Lagden",
   "license": "MIT",
   "devDependencies": {
-    "ava": "0.25.0",
+    "ava": "1.0.1",
     "xo": "0.23"
   },
   "xo": {
