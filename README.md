@@ -5,6 +5,7 @@
 [![Coverage Status][coveralls-img]][coveralls]
 [![Dependency Status][dep-img]][dep]
 [![devDependency Status][devDep-img]][devDep]
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flagden%2Fsignature.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flagden%2Fsignature?ref=badge_shield)
 
 [![XO code style][xo-img]][xo]
 [![Greenkeeper badge][greenkeeper-img]][greenkeeper]
@@ -85,3 +86,6 @@ secret      | string               | yes         | The same expression used to g
 ## License
 
 MIT © [Thiago Lagden](http://lagden.in)
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flagden%2Fsignature.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flagden%2Fsignature?ref=badge_large)
