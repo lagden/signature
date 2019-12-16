@@ -11,6 +11,7 @@ function verify(signature, payload, secret) {
 	if (parts.length !== 2) {
 		return false
 	}
+
 	const [algorithm] = parts
 	const verify = generate(algorithm, payload, secret)
 	return timingSafeEqual(Buffer.from(verify), Buffer.from(signature))
