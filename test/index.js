@@ -1,7 +1,7 @@
 'use strict'
 
-import test from 'ava'
-import {verify, generate} from '..'
+const test = require('ava')
+const {verify, generate} = require('..')
 
 const _secret = 'a7fee042a2e1a9fa27cfc6931949ffe1'
 
