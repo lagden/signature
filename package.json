@@ -24,7 +24,7 @@
   "license": "MIT",
   "devDependencies": {
     "ava": "3.7.0",
-    "xo": "0.29.1"
+    "xo": "0.31.0"
   },
   "xo": {
     "envs": [
