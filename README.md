@@ -1,30 +1,19 @@
-# signature
+# @tadashi/signature
 
 [![NPM version][npm-img]][npm]
 [![Build Status][ci-img]][ci]
 [![Coverage Status][coveralls-img]][coveralls]
-[![Dependency Status][dep-img]][dep]
-[![devDependency Status][devDep-img]][devDep]
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flagden%2Fsignature.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Flagden%2Fsignature?ref=badge_shield)
-
-[![XO code style][xo-img]][xo]
-[![Greenkeeper badge][greenkeeper-img]][greenkeeper]
 
 
-[greenkeeper-img]: https://badges.greenkeeper.io/lagden/signature.svg
-[greenkeeper]:     https://greenkeeper.io/
 [npm-img]:         https://img.shields.io/npm/v/@tadashi/signature.svg
 [npm]:             https://www.npmjs.com/package/@tadashi/signature
-[ci-img]:          https://travis-ci.org/lagden/signature.svg
-[ci]:              https://travis-ci.org/lagden/signature
+[ci-img]:          https://github.com/lagden/signature/actions/workflows/nodejs.yml/badge.svg
+[ci]:              https://github.com/lagden/signature/actions/workflows/nodejs.yml
 [coveralls-img]:   https://coveralls.io/repos/github/lagden/signature/badge.svg?branch=master
 [coveralls]:       https://coveralls.io/github/lagden/signature?branch=master
-[dep-img]:         https://david-dm.org/lagden/signature.svg
-[dep]:             https://david-dm.org/lagden/signature
-[devDep-img]:      https://david-dm.org/lagden/signature/dev-status.svg
-[devDep]:          https://david-dm.org/lagden/signature#info=devDependencies
-[xo-img]:          https://img.shields.io/badge/code_style-XO-5ed9c7.svg
-[xo]:              https://github.com/sindresorhus/xo
+
+
+---
 
 Generates and verifies signatures
 
@@ -40,7 +29,7 @@ $ npm i -S @tadashi/signature
 ### Generate
 
 ```js
-const {generate} = require('@tadashi/signature')
+import {generate} from '@tadashi/signature'
 
 const algorithm = 'sha1'
 const payload = '{}'
@@ -53,7 +42,7 @@ const signature = generate(algorithm, payload, secret)
 ### Verify
 
 ```js
-const {verify} = require('@tadashi/signature')
+import {verify} from '@tadashi/signature'
 
 const signature = 'sha1=61ca6afb7b2752e106c939df11bbd7ca883b8166'
 const payload = '{}'
@@ -83,9 +72,14 @@ payload     | string               | yes         | Data used to generate the has
 secret      | string               | yes         | The same expression used to generate
 
 
+## Donate ❤️
+
+- BTC: bc1q7famhuj5f25n6qvlm3sssnymk2qpxrfwpyq7g4
+
+
 ## License
 
-MIT © [Thiago Lagden](http://lagden.in)
+MIT © [Thiago Lagden](https://github.com/lagden)
 
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Flagden%2Fsignature.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Flagden%2Fsignature?ref=badge_large)
