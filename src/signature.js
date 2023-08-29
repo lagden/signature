@@ -1,13 +1,11 @@
-'use strict'
+import {createHmac, timingSafeEqual} from 'node:crypto'
 
-const {createHmac, timingSafeEqual} = require('crypto')
-
-function generate(algorithm, payload, secret) {
+export function generate(algorithm, payload, secret) {
 	return `${algorithm}=${createHmac(algorithm, secret).update(payload).digest('hex')}`
 }
 
-function verify(signature, payload, secret) {
-	const parts = `${signature}`.split('=')
+export function verify(signature, payload, secret) {
+	const parts = String(signature).split('=')
 	if (parts.length !== 2) {
 		return false
 	}
@@ -16,6 +14,3 @@ function verify(signature, payload, secret) {
 	const verify = generate(algorithm, payload, secret)
 	return timingSafeEqual(Buffer.from(verify), Buffer.from(signature))
 }
-
-exports.verify = verify
-exports.generate = generate

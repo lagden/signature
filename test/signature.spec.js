@@ -1,7 +1,5 @@
-'use strict'
-
-const test = require('ava')
-const {verify, generate} = require('..')
+import test from 'ava'
+import {verify, generate} from '../src/signature.js'
 
 const _secret = 'a7fee042a2e1a9fa27cfc6931949ffe1'
 

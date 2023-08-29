@@ -1,6 +1,0 @@
-language: node_js
-node_js:
-  - "10"
-  - "12"
-script: "npx xo;npx nyc ava"
-after_script: "npm i coveralls nyc;npm run report"
